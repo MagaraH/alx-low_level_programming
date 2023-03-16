@@ -3,7 +3,8 @@
  * main - its a void function
  * uses puts function to print on the starndard output
  *
- *Description: The return value is 0
+ *Description: We use the puts method instead of printf
+ *Return: The return value is 0
  */
 int main(void)
 {
