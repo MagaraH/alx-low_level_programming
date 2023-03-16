@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main: uses printf fun to print on stdio
+ *main - Uses printf to print a string
  *
- * Description: We are using printf
- * Return: the return value will be 0 meaning we use int on main
+ *Description: We have been tasked with using printf
+ *Return: Shouldn't return anything (0)
  */
 int main(void)
 {
