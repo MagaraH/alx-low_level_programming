@@ -8,7 +8,7 @@
  * it use while loop to go through each lower case letter
  * Return: (0)
  */
-char main(void)
+int main(void)
 {
 	char letter = 'a';
 
