@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h["
 /**
  * times_table - prints the 9 times table, starting with 0.
  *
@@ -10,6 +10,7 @@ void times_table(void)
 	int y;
 
 	for (x = 0 ; x <= 9 ; x++)
+	{
 		y = 0;
 	_putchar('0');
 	for (y = 1 ; y <= 9; y++)
@@ -30,4 +31,5 @@ void times_table(void)
 		}
 	}
 	_putchar('\n');
+	}
 }
