@@ -2,7 +2,7 @@
 /**
  * times_table - prints the 9 times table, starting with 0.
  *
- * Return: alwayss void
+ * Return: always void
  */
 void times_table(void)
 {
@@ -10,7 +10,7 @@ void times_table(void)
 	int y;
 
 	for (x = 0 ; x <= 9 ; x++)
-		j = 0;
+		y = 0;
 	_putchar('0');
 	for (y = 1 ; y <= 9; y++)
 	{
