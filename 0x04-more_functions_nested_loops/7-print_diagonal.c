@@ -1,7 +1,9 @@
 #include "main.h"
 /**
+ * print_diagonal - function that prints diagnally
  *
- *
+ * @n: function parameter
+ * Return: always 0
  */
 void print_diagonal(int n)
 {
