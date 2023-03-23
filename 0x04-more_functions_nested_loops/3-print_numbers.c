@@ -12,8 +12,3 @@ void print_numbers(void)
 		_putchar('0' + x);
 	_putchar('\n');
 }
-int main(void)
-{
-    print_numbers();
-    return (0);
-}
