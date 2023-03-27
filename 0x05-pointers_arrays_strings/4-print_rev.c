@@ -5,7 +5,7 @@
  * @s: funcction parameter
  * Return: 0
  */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int i;
 	int count = 0;
