@@ -2,7 +2,7 @@
 /**
  * *_memset - function that fills memory with a constant byte.
  *
- * @*s: memory to be filled
+ * @s: memory to be filled
  * @b: constant byte
  * @n: function parameter
  * Return: s
@@ -11,7 +11,7 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	int i = 0;
 
-	for(; n > 0 ; i++)
+	for (; n > 0 ; i++)
 	{
 		s[i] = b;
 		n--;
