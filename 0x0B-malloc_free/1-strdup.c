@@ -12,8 +12,8 @@ char *_strdup(char *str)
 {
 	char *pt_Str;
 	int count;
-
 	int str_len = 0;
+
 	while (str[str_len] != '\0')
 	{
 		str_len++;
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 
 	if (pt_Str == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	for (count = 0; str[count] != '\0'; count++)
 	{
