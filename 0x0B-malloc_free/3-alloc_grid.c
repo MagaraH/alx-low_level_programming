@@ -16,10 +16,10 @@ int **alloc_grid(int width, int height)
 	int y;
 
 	if (width <= 0 || height <= 0)
-		return(NULL);
+		return (NULL);
 	ptr = (int **)malloc(height * sizeof(int *));
 	if (ptr == NULL)
-		return(NULL);
+		return (NULL);
 	for (x = 0 ; x < height ; x++)
 	{
 		ptr[x] = (int *)malloc(width * sizeof(int));
