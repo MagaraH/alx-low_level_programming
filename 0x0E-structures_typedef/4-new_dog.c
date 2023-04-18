@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 /**
  * _strlen - function that returns length of a string
  *
@@ -11,10 +12,11 @@ int _strlen(char *str)
 
 	len = 0;
 
-	while (str[len] != '\0' ; len++)
+	while (str[len] != '\0')
 	{
-		return (len);
+		len++;
 	}
+	return (len);
 }
 /**
  * _strcopy - function that copies a string
@@ -23,22 +25,23 @@ int _strlen(char *str)
  * @dest: pointer to buffer where string is copied to
  * Return: dest
  */
-char _strcopy(char *dest, char *src)
+char *_strcopy(char *dest, char *src)
 {
 	int len;
 	int i;
 
 	len = 0;
 
-	while (src[len] != '\0' ; len++)
+	while (src[len] != '\0')
 	{
-		for (i = 0 ; i < len ; i++)
-		{
-			dest[i] = src[i];
-		}
-		dest[i] = '\0';
-		return (dest);
+		len++;
 	}
+	for (i = 0 ; i < len ; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
+	return (dest);
 }
 /**
  * new_dog - function that defines a dog
@@ -73,8 +76,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(doggie->name);
 		return (NULL);
 	}
-	_strcpy(doggie->name, name);
-	_strcpy(doggie->owner, owner);
+	_strcopy(doggie->name, name);
+	_strcopy(doggie->owner, owner);
 	doggie->age = age;
 	return (doggie);
 }
