@@ -1,5 +1,5 @@
 #include <stdio.h>
-void before_main() __attribute__((constructor));
+void before_main(void) __attribute__((constructor));
 
 /**
  * before_main - function that is excuted before main function
